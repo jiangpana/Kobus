@@ -92,7 +92,7 @@ class TestClass : EventScope by MainEventScope() {
 
 发送事件，支持粘性事件
 
-```
+```kotlin
         Kobus.post("post str")
         Kobus.postSticky("post sticky str")
 ```
