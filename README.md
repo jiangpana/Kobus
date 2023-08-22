@@ -38,7 +38,7 @@ api 设计通俗易用，支持链式调用。
 
 在 Fragment , Activity , ViewModel , LifecycleOwner 中直接订阅即可，框架内部会在生命周期onDestroy时自动解注册以及取消协程。
 
-```
+```kotlin
 class MainActivity : ComponentActivity() {
     val TAG = javaClass.simpleName
 
@@ -70,7 +70,7 @@ class MainActivity : ComponentActivity() {
 
 在其他类中使用需实现EventScope ，EventScope继承自协程域，使用完之后需要手动调用unregister 解注册以及取消协程，如下。
 
-```
+```kotlin
 class TestClass : EventScope by MainEventScope() {
     val TAG = javaClass.simpleName
 
