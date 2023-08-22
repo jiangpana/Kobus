@@ -1,5 +1,5 @@
 # Kobus
-一个支持Kotlin 协程的事件总线框架 ，使用Flow实现   
+🔥一个支持Kotlin 协程的事件总线框架 ，使用Flow实现   
 An event bus framework that supports coroutines, implemented using Flow 
 
 ##
